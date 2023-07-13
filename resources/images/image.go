@@ -24,9 +24,8 @@ import (
 	"io"
 	"sync"
 
-	"github.com/bep/gowebp/libwebp/webpoptions"
 	"github.com/gohugoio/hugo/config"
-	"github.com/gohugoio/hugo/resources/images/webp"
+	"github.com/chai2010/webp"
 
 	"github.com/gohugoio/hugo/media"
 	"github.com/gohugoio/hugo/resources/images/exif"
@@ -101,12 +100,7 @@ func (i *Image) EncodeTo(conf ImageConfig, img image.Image, w io.Writer) error {
 		return bmp.Encode(w, img)
 	case WEBP:
 		return webp.Encode(
-			w,
-			img, webpoptions.EncodingOptions{
-				Quality:        conf.Quality,
-				EncodingPreset: webpoptions.EncodingPreset(conf.Hint),
-				UseSharpYuv:    true,
-			},
+			w, img, &webp.Options{Quality: float32(conf.Quality)},
 		)
 	default:
 		return errors.New("format not supported")

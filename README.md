@@ -90,13 +90,13 @@ Prerequisites to build Hugo from source:
 Build the standard edition:
 
 ```text
-go install github.com/gohugoio/hugo@latest
+go install github.com/xianfei/hugo@latest
 ```
 
 Build the extended edition:
 
 ```text
-CGO_ENABLED=1 go install -tags extended github.com/gohugoio/hugo@latest
+CGO_ENABLED=1 go install -tags extended github.com/xianfei/hugo@latest
 ```
 
 ## Documentation

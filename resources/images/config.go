@@ -26,7 +26,7 @@ import (
 
 	"errors"
 
-	"github.com/bep/gowebp/libwebp/webpoptions"
+	"github.com/gohugoio/hugo/resources/images/webp/webpoptions"
 
 	"github.com/disintegration/gift"
 )

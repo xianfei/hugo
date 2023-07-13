@@ -16,20 +16,6 @@
 
 package webp
 
-import (
-	"image"
-	"io"
-
-	"github.com/bep/gowebp/libwebp"
-	"github.com/bep/gowebp/libwebp/webpoptions"
-)
-
-// Encode writes the Image m to w in Webp format with the given
-// options.
-func Encode(w io.Writer, m image.Image, o webpoptions.EncodingOptions) error {
-	return libwebp.Encode(w, m, o)
-}
-
 // Supports returns whether webp encoding is supported in this build.
 func Supports() bool {
 	return true

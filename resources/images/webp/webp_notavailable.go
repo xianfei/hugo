@@ -16,20 +16,6 @@
 
 package webp
 
-import (
-	"image"
-	"io"
-
-	"github.com/gohugoio/hugo/common/herrors"
-
-	"github.com/bep/gowebp/libwebp/webpoptions"
-)
-
-// Encode is only available in the extended version.
-func Encode(w io.Writer, m image.Image, o webpoptions.EncodingOptions) error {
-	return herrors.ErrFeatureNotAvailable
-}
-
 // Supports returns whether webp encoding is supported in this build.
 func Supports() bool {
 	return false
