@@ -87,16 +87,20 @@ Prerequisites to build Hugo from source:
 - Standard edition: Go 1.19 or later
 - Extended edition: Go 1.19 or later, and GCC
 
-Build the standard edition:
-
-```text
-go install github.com/xianfei/hugo@latest
-```
-
 Build the extended edition:
 
 ```text
-CGO_ENABLED=1 go install -tags extended github.com/xianfei/hugo@latest
+git clone xxx
+cd xxx
+go build -tags extended
+```
+
+Install the extended edition:
+
+```text
+git clone xxx
+cd xxx
+go install -tags extended
 ```
 
 ## Documentation

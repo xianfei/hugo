@@ -164,9 +164,7 @@ func BuildVersionString() string {
 	versionString := fmt.Sprintf("%s %s %s BuildDate=%s",
 		program, version, osArch, date)
 
-	if vendorInfo != "" {
-		versionString += " VendorInfo=" + vendorInfo
-	}
+	versionString += " Modified by xianfei"
 
 	return versionString
 }

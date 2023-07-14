@@ -13,7 +13,6 @@ require (
 	github.com/bep/godartsass v1.2.0
 	github.com/bep/godartsass/v2 v2.0.0
 	github.com/bep/golibsass v1.1.1
-	github.com/chai2010/webp v1.1.1
 	github.com/bep/helpers v0.4.0
 	github.com/bep/lazycache v0.2.0
 	github.com/bep/logg v0.2.0
@@ -21,6 +20,7 @@ require (
 	github.com/bep/overlayfs v0.6.0
 	github.com/bep/simplecobra v0.3.2
 	github.com/bep/tmc v0.5.1
+	github.com/chai2010/webp v1.1.1
 	github.com/clbanning/mxj/v2 v2.5.7
 	github.com/cli/safeexec v1.0.1
 	github.com/disintegration/gift v1.2.1
